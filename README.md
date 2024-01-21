@@ -48,8 +48,8 @@ os.environ["OPENAI_API_KEY"] = "YOUR KEY"
 
 # You can choose to use a local model through Ollama for example.
 #
-# from langchain.llms import Ollama
-# ollama_llm = Ollama(model="openhermes")
+from langchain.llms import Ollama
+ollama_llm = Ollama(model="openhermes")
 
 # Install duckduckgo-search for this example:
 # !pip install -U duckduckgo-search
