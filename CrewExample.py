@@ -1,6 +1,7 @@
+from crewai import Agent, Task, Crew, Process
 import os
-from crewai import agent, task, crew, process
-os.environ["OPENAI_API_Key"]="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"
+os.environ ["OPENAI_API_Key"] = "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"
+
 researcher = agent(
 role ='researcher',
 goal ='Research new AI insights',
@@ -8,6 +9,8 @@ backstory ='You are an AI research Assistant',
 verbose = True,
 Allow_Delegation = False
 )
+
+
 writer =agent(
 role ='Writer',
 goal ='Compelling AI atricles about programmang and AI bots',backstory ='You are an AI blog writer',
@@ -21,7 +24,8 @@ crew=crew(
     agents=[researcher, writer],
     tasks=[task1, task2],
     verbose=2,
-    process=process.sequential
+    process=Process.sequential
     
 )
 result = crew.kickoff()
+tech_crew.kickoff()
