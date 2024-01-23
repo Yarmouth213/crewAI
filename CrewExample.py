@@ -1,7 +1,7 @@
 from crewai import Agent, Task, Crew, Process
 import os
-os.environ ["OPENAI_API_Key"] = "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"
-
+os.environ ["OPENAI_API_Key"] = "TBD"
+/* Insert TBD with actual OPENAIKey or use another environment */
 researcher = agent(
 role ='researcher',
 goal ='Research new AI insights',
@@ -9,7 +9,7 @@ backstory ='You are an AI research Assistant',
 verbose = True,
 Allow_Delegation = False
 )
-
+/*Current Product is non-functional*/
 
 writer =agent(
 role ='Writer',
